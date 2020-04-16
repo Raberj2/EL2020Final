@@ -1,0 +1,24 @@
+<!--html code for website goes here-->
+<!DOCTYPE html>
+	<head>
+		<link rel="stylesheet" href="styles.css">
+		<title>Raspberry Pi Security</title>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+	</head>
+	<body>
+		
+		<center>
+			<h1>Security Test Page Please Ignore</h1>
+			<p>By Jared, Josh, and Haley</p>
+			<h2>Login to Deactivate</h2>
+			<button onClick="window.location.href='{{ url_for( 'login') }}';"> Login to Disarm</button>
+		</center>
+
+		<script type='text/javascript'>
+			function button() {
+				$.ajax({ type:'get', url:'/button', cache:false, async:'asynchronus'});
+			}
+		</script>
+	</body>
+</html>

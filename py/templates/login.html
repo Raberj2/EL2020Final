@@ -1,0 +1,42 @@
+<html>
+  <head>
+    <title>Deactivation login page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		body {
+                        background-image: linear-gradient(to right, rgba(222, 222, 222,1), rgba(122, 122, 122, 1));
+                        background-size: auto;
+                }
+		#loginbox {
+			background-color: RGB(138, 113, 88);
+			box-shadow: 2px 4px;
+			height: 25%;
+			width: 25%;
+		}
+	</style>
+  </head>
+  <body>
+   <center>
+    <div class="container" id="loginbox">
+      <h1>Please login</h1>
+      <br>
+      <form action="" method="post">
+        <input type="text" placeholder="Username" name="usr" value="{{
+          request.form.username }}">
+	<br>
+	<br>
+         <input type="password" placeholder="Password" name="psw" value="{{
+          request.form.password }}">
+	<br>
+	<br>
+        <input class="btn btn-default" type="submit" value="Deactivate">
+	<br>
+	<br>
+      </form>
+      {% if error %}
+        <p class="error"><strong>Error:</strong> {{ error }}</p>
+      {% endif %}
+    </div>
+  </center>
+  </body>
+</html>
