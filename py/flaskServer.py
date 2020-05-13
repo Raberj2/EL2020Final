@@ -7,13 +7,22 @@ from flask import Flask, render_template, jsonify, Response, redirect, url_for, 
 import sqlite3 as sql
 import json
 import models as dbHandler
+import subprocess
+import RPi.GPIO as GPIO
+
+GPIO.setmode(GPIO.BCM)
+GPIO.setup(24, GPIO.OUT)
 
 #globals
 app = Flask(__name__)
 #magic
 @app.route("/")
 def index():
-	return render_template('index.html')
+	con = sql.connect('../logs/sensor.db')
+	cur = con.cursor()
+	cur.execute("SELECT * FROM sensor")
+	data = cur.fetchall()
+	return render_template('index.html',data=data)
 
 #@app.route('/button')
 #def button():
@@ -29,6 +38,8 @@ def login():
 		state = dbHandler.checklogin(username, password)
 		if(state):
 			print("Login Accepted")
+			GPIO.output(24, False)
+		        subprocess.call(['flite','-voice','slt','-t',"System is now Offline"])
 			return redirect(url_for('index'))
 		else:
 			print("Login Rejected")
