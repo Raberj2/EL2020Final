@@ -4,6 +4,9 @@ Jared Raber<br />
 Joshua Raber<br />
 Haley Rosenblatt Niggl<br />
 
+## Link to youtube demonstration:
+https://www.youtube.com/watch?v=0rssY4WopXo<br />
+
 ## How to run:<br />
 In one putty terminal run detec.py and in another run flaskServer.py. Both scripts are located in the py/ directory.
 To login, in web browser, go to the pi address at port 2020. If you do not have a login already you can register a new one. After new user is registered, simply return to the login screen and enter credential then press deactivate.
