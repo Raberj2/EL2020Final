@@ -64,6 +64,8 @@ For the Vibration Sensor, connect the "DO" pin to GPIO21 with a male-to-male wir
 
 For the IR Motion Sensor, connect the middle pin to GPIO26 with a male-to-female wire.<br />
 
+As for the speaker, plug it into the pi's audio port.<br />
+
 ## Software Description:<br />
 This section will describe the diffent pieces of software and how they work together in order to produce a functioning design. The two major pieces of code are in detec.py and flaskServer.py:<br />
   ###### detec.py:<br />
