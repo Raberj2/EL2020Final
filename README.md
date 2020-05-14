@@ -15,7 +15,7 @@ This section will describe the diffent pieces of software and how they work toge
   ###### flaskServer.py:<br />
    flaskServer.py handles a lot of the other processes that goes on in this project. It handles the webserver hosting, data                displaying, deactivation, and log in and registration system. Starting with the login and registration system, this is done              using various html files in the tempates/ directory, including login.html and register.html, as well as assistance from                  models.py which gets imported as dbHandler. <br />
            
- ############ models.py:<br />
+ ###### models.py:<br />
 
 
 Workload Breakdown:<br />
