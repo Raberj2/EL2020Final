@@ -13,29 +13,29 @@ To login, in web browser, go to the pi address at port 2020. If you do not have 
 
 ## Prerequisite installations:<br />
 How to install SQLite3 onto your Raspberry Pi:<br />
-1. Turn on your pi and login
-2. These next two steps take a little bit of time so make sure you keep your pi plugged in, and connected to your WiFi
-3. Then run the following command, which will update your pi and take a few minutes: sudo apt-get update
-4. Now it’s time to upgrade your pi before we can install SQLite3! Run the following command which will take a few minutes: sudo apt-get upgrade 
-5. Now it’s time to install SQLite3! Run the following command: sudo apt-get install sqlite3
+1. Turn on your pi and login<br />
+2. These next two steps take a little bit of time so make sure you keep your pi plugged in, and connected to your WiFi<br />
+3. Then run the following command, which will update your pi and take a few minutes: sudo apt-get update<br />
+4. Now it’s time to upgrade your pi before we can install SQLite3! Run the following command which will take a few minutes: sudo apt-get upgrade <br />
+5. Now it’s time to install SQLite3! Run the following command: sudo apt-get install sqlite3<br />
 6. SQLite3 should take a minute or so to download so once it’s finished, you have it installed onto your pi!<br />
+<br />
 How to install Python onto your Raspberry Pi:<br />
-
-1. Turn on your pi and login
-2. These next two steps take a little bit of time so make sure you keep your pi plugged in, and connected to your WiFi
-3. Then run the following command, which will update your pi and take a few minutes: sudo apt-get update
-4. Now it’s time to upgrade your pi before we can install Python! Run the following command which will take a few minutes: sudo apt-get upgrade 
-5. In these next two steps, you will be installing python and python3 so you can use both!
-6. Run the following command to download python 2: sudo apt install python-pip
+1. Turn on your pi and login<br />
+2. These next two steps take a little bit of time so make sure you keep your pi plugged in, and connected to your WiFi<br />
+3. Then run the following command, which will update your pi and take a few minutes: sudo apt-get update<br />
+4. Now it’s time to upgrade your pi before we can install Python! Run the following command which will take a few minutes: sudo apt-get upgrade <br />
+5. In these next two steps, you will be installing python and python3 so you can use both!<br />
+6. Run the following command to download python 2: sudo apt install python-pip<br />
 7. Run the following command to download python 3: sudo apt install python3-pip<br />
+<br />
 How to install Git onto your Raspberry Pi:<br />
-
-1. Turn on your pi and login
-2. These next two steps take a little bit of time so make sure you keep your pi plugged in, and connected to your WiFi
-3. Then run the following command, which will update your pi and take a few minutes: sudo apt-get update
-4. Now it’s time to upgrade your pi before we can install git! Run the following command which will take a few minutes: sudo apt-get upgrade
-5. Now that the pi is updated and upgraded, it’s time to install git! Run the following command: sudo apt-get install git
-6. Now that git is installed, let’s get it prepped to be used with you account! Run the following 3 commands: git config --global user.name "your username goes here”.                        git config --global user.email "your email goes here”.                                git config --global core.editor nano
+1. Turn on your pi and login<br />
+2. These next two steps take a little bit of time so make sure you keep your pi plugged in, and connected to your WiFi<br />
+3. Then run the following command, which will update your pi and take a few minutes: sudo apt-get update<br />
+4. Now it’s time to upgrade your pi before we can install git! Run the following command which will take a few minutes: sudo apt-get upgrade<br />
+5. Now that the pi is updated and upgraded, it’s time to install git! Run the following command: sudo apt-get install git<br />
+6. Now that git is installed, let’s get it prepped to be used with you account! Run the following 3 commands: git config --global user.name "your username goes here”.                        git config --global user.email "your email goes here”.                                git config --global core.editor nano<br />
 7. Now Git is installed and ready to use on your pi!<br />
 
 ## Circuit Description:<br />
