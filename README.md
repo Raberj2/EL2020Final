@@ -116,3 +116,10 @@ This section will describe the diffent pieces of software and how they work toge
   models.py is used exclusively to be imported in flaskServer.py to be used as dbHandler. This script is responsible for managing the database that is used for keeping track of user information in logs/users2.db. This allows the flaskServer.py to handle logins with usernames and passwords that are located on that database file as well as register new users by adding to that file. It also checks if the name being registered already exists on the file in order to prevent duplicate users with the same login information.<br />
 
 ## Workload Breakdown:<br />
+Due to technical issues and lack of experience we were unable to commit to git via multiple accounts. This section will describe which parts of the project were contributed by which people.<br />
+##### Haley: <br />
+Worked priliminarily with sensor testing then compiled detec.py with assistance from Jared and Josh when it came to implementing it with the flaskServer.py. Also helped with the testing and exploiting of the login registration system to work out the bugs with it.<br />
+##### Jared: <br />
+Created the flaskServer.py and gave it the ability to handle multiple webages and the ability to login and register new users in order to deactivate the machine by use of a users database. Also assisted with the implementation of detec.py with the flaskServer.py script with the help of Josh.<br />
+##### Josh: <br />
+Implemented the flaskServer and detec scripts ability to communicate to each other as well as allowed the web server to display logged sensor data to the index webpage in a scrollbar.<br />
