@@ -37,7 +37,18 @@ How to install Git onto your Raspberry Pi:<br />
 5. Now that the pi is updated and upgraded, it’s time to install git! Run the following command: sudo apt-get install git<br />
 6. Now that git is installed, let’s get it prepped to be used with you account! Run the following 3 commands: git config --global user.name "your username goes here”.                        git config --global user.email "your email goes here”.                                git config --global core.editor nano<br />
 7. Now Git is installed and ready to use on your pi!<br />
-
+<br />
+How to install flite:<br />
+1. cd ~/Downloads<br />
+2. sudo apt-get install libasound2-dev<br />
+3. wget http://www.festvox.org/flite/packed/flite-2.1/flite-2.1-release.tar.bz2<br />
+4. tar -xvf flite-2.1-release.tar.bz2<br />
+5. cd flite-2.1-release<br />
+6. ./configure --with-audio=alsa --with-vox=awb<br />
+7. make<br />
+8. sudo make install<br />
+9. Try it out flite -t "May the force be with you."<br />
+<br />
 ## Circuit Description:<br />
 Components Needed: <br />
 - Digital Touch Sensor [1]<br />
